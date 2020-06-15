@@ -14,6 +14,7 @@ public class MyServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("输出成功");
         request.getRequestDispatcher("/hell.jsp").forward(request,response);
     }
 }
